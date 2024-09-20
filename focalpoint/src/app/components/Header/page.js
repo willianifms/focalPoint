@@ -30,7 +30,7 @@ className={styles.logoType}
 />
 </section>
 
-<section>
+<section className={styles.welcome}>
     <p className={styles.welcome}>Bem-Vindo de volta, Marcus</p> 
 </section>
 
