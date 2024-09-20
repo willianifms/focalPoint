@@ -1,34 +1,40 @@
-.itemTarefa{
+.itemTarefa {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px dashed #d7dde9;
+  margin: 16px;
+  width: 386px;
+  height: 56px;
+  border-radius: 8px;
+
+  &:hover {
+    background-color: #f7f9fd;
+  }
+  .tarefa {
+    
+    font-family: "Inter Tight";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.02em;
+    color: #000000;
+  }
+  .checkbox {
+    width: 24px;
+    height: 24px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 10px;
-    border: 1px dashed #D7DDE9;
-    margin:16px;
-    width: 386px;
-    height: 56px;
-    border-radius: 8px;
+    cursor: pointer;
+  }
 
-    &:hover{
-        background-color: #F7F9FD;
-    }
-    .checkbox{
-        width: 24px;
-        height: 24px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-
-
-    }
-
-    .btnTrash{
-        width: 18px;
-        height: 20px;
-        cursor: pointer;
-        color: #B0BBD1;
-    }
-
+  .btnTrash {
+    width: 18px;
+    height: 20px;
+    cursor: pointer;
+    color: #b0bbd1;
+  }
 }
-

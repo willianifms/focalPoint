@@ -1,0 +1,86 @@
+.triggerButton {
+  margin-top: 24px;
+  width: 450px;
+  height: 51px;
+  background: linear-gradient(90deg, #0796d3 0%, #53c0f0 68.65%);
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.btnTrash{
+  width: 18px;
+  height: 20px;
+  cursor: pointer;
+  color: #B0BBD1;
+}
+
+.containerPopUp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 32px;
+  gap: 32px;
+  background: #ffffff;
+  box-shadow: 0px 34px 58px -12px rgba(16, 24, 40, 0.18);
+  border-radius: 16px;
+
+  .title {
+    font-family: "Inter Tight";
+    font-weight: 500;
+    font-size: 24px;
+    color: #000000;
+  }
+
+  .label {
+    font-family: "Inter Tight";
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: -30px;
+  }
+
+  .input {
+    width: 386px;
+    height: 51px;
+    padding: 16px;
+    border: 1px solid #d7dde9;
+    border-radius: 8px;
+  }
+
+  .containerButton {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    .btnCancelar,
+    .btnAdicionar,
+    .btnDeletar {
+      width: 185px;
+      height: 51px;
+      border-radius: 8px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .btnCancelar {
+      background: #e7eefb;
+    }
+
+    .btnAdicionar {
+      background: linear-gradient(90deg, #0796d3 0%, #53c0f0 68.65%);
+      color: #fff;
+    }
+
+    .btnDeletar {
+      background: linear-gradient(90deg, #D30707 0%, #F05353 68.65%);
+      color: #fff;
+
+    }
+  }
+}
+
+
