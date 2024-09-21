@@ -17,7 +17,7 @@
 
   .tarefa {
     margin: 0 10px;
-    width: 80%;
+    width: 90%;
     word-wrap: break-word;
     justify-content: center;
     font-family: "Inter Tight";
@@ -67,5 +67,11 @@
     height: 20px;
     cursor: pointer;
     color: #b0bbd1;
+  }
+}
+
+@media (max-width: 960px) {
+  .tarefa {
+    width: 70%;
   }
 }
