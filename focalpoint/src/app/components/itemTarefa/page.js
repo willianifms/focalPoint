@@ -1,13 +1,16 @@
 import styles from "./style.module.scss";
-import { FiTrash } from "react-icons/fi";
-import DeletarTarefa from "../DeletarTarefa/page"; 
+import DeletarTarefa from "../DeletarTarefa/page";
 
 export default function ItemTarefa({ tarefa, onDelete, onToggle }) {
+  if (!tarefa) {
+    return null;
+  }
+
   return (
     <section className={styles.itemTarefa}>
       <input
         type="checkbox"
-        checked={tarefa.completed}
+        checked={tarefa.completed || false}
         onChange={onToggle}
         className={styles.checkbox}
       />
