@@ -3,19 +3,19 @@ import { useState, useEffect } from "react";
 import Header from "./components/Header/page";
 import ItemTarefa from "./components/itemTarefa/page";
 import styles from "./styles/globals.module.scss";
+import popUp from "./styles/popUp.module.scss";
 import AdicionarTarefa from "./components/AdicionarTarefa/page";
-import { v4 as uuidv4 } from 'uuid';  // Para gerar IDs únicos
+import { v4 as uuidv4 } from 'uuid';
+import DeletarTarefa from "./components/DeletarTarefa/page"; //caminho se necessário
 
 function Home() {
   const [tarefas, setTarefas] = useState([]);
 
-  // Carregar tarefas do localStorage ao iniciar
   useEffect(() => {
     const tarefasSalvas = JSON.parse(localStorage.getItem("tarefas")) || [];
     setTarefas(tarefasSalvas);
   }, []);
-
-  // Salvar tarefas no localStorage sempre que forem alteradas
+  
   useEffect(() => {
     localStorage.setItem("tarefas", JSON.stringify(tarefas));
   }, [tarefas]);

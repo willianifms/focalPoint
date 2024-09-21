@@ -21,7 +21,7 @@ export default function DeletarTarefa({ onConfirmDelete }) {
         maxWidth: "100%",
         margin: "auto",
         maxHeight: "auto",
-        
+
         
       }}
       overlayStyle={{
