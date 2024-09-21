@@ -6,7 +6,7 @@ import 'moment/locale/pt-br';
 
 moment.locale('pt-br')
 
-let now = moment().format('LLLL').slice(0,36);
+let now = moment().format('LLLL').slice(0,31);
 
 export default function Header(){
 

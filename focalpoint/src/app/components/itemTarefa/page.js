@@ -1,5 +1,6 @@
 import styles from "./style.module.scss";
 import { FiTrash } from "react-icons/fi";
+import DeletarTarefa from "../DeletarTarefa/page"; 
 
 export default function ItemTarefa({ tarefa, onDelete, onToggle }) {
   return (
@@ -19,9 +20,7 @@ export default function ItemTarefa({ tarefa, onDelete, onToggle }) {
       >
         {tarefa.titulo}
       </p>
-      <button className={styles.btnTrash} onClick={onDelete}>
-        <FiTrash size={20} />
-      </button>
+      <DeletarTarefa onConfirmDelete={onDelete} />
     </section>
   );
 }

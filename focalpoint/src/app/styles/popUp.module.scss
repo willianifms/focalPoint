@@ -1,6 +1,7 @@
 .triggerButton {
   margin-top: 24px;
-  width: 450px;
+  max-width: 450px;
+  width: 75%;
   height: 51px;
   background: linear-gradient(90deg, #0796d3 0%, #53c0f0 68.65%);
   border-radius: 8px;
@@ -9,11 +10,11 @@
   font-weight: 500;
 }
 
-.btnTrash{
+.btnTrash {
   width: 18px;
   height: 20px;
   cursor: pointer;
-  color: #B0BBD1;
+  color: #b0bbd1;
 }
 
 .containerPopUp {
@@ -76,11 +77,27 @@
     }
 
     .btnDeletar {
-      background: linear-gradient(90deg, #D30707 0%, #F05353 68.65%);
+      background: linear-gradient(90deg, #d30707 0%, #f05353 68.65%);
       color: #fff;
-
     }
   }
 }
 
+@media (max-width: 960px) {
+  .containerPopUp {
+    height: 100vh;
+    justify-content: start;
+    
 
+    .containerButton{
+      flex-direction: column;
+      gap: 16px;
+
+      .btnCancelar,
+      .btnAdicionar,
+      .btnDeletar {
+        width: 100%;
+      }
+    }
+  }
+}
