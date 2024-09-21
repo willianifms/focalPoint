@@ -37,10 +37,7 @@ export default function DeletarTarefa({ onConfirmDelete }) {
             Tem certeza que você deseja deletar essa tarefa?
           </p>
           <div className={popUp.containerButton}>
-            <button className={popUp.btnCancelar} onClick={close}>
-              Cancelar
-            </button>
-            <button
+          <button
               className={popUp.btnDeletar}
               onClick={() => {
                 onConfirmDelete();
@@ -49,6 +46,10 @@ export default function DeletarTarefa({ onConfirmDelete }) {
             >
               Deletar
             </button>
+            <button className={popUp.btnCancelar} onClick={close}>
+              Cancelar
+            </button>
+
           </div>
         </section>
       )}

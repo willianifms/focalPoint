@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React, { useState } from "react";
 import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
@@ -10,7 +10,7 @@ function AdicionarTarefa({ adicionarTarefa }) {
   const handleAdicionarTarefa = () => {
     if (novaTarefa.trim()) {
       adicionarTarefa(novaTarefa);
-      setNovaTarefa(""); 
+      setNovaTarefa("");
     }
   };
 
@@ -46,9 +46,6 @@ function AdicionarTarefa({ adicionarTarefa }) {
           />
 
           <div className={popUp.containerButton}>
-            <button className={popUp.btnCancelar} onClick={close}>
-              Cancelar
-            </button>
             <button
               className={popUp.btnAdicionar}
               onClick={() => {
@@ -57,6 +54,9 @@ function AdicionarTarefa({ adicionarTarefa }) {
               }}
             >
               Adicionar
+            </button>
+            <button className={popUp.btnCancelar} onClick={close}>
+              Cancelar
             </button>
           </div>
         </section>

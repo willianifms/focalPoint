@@ -1,11 +1,11 @@
-'use client';
+"use client";
 import { useState, useEffect } from "react";
 import Header from "./components/Header/page";
 import ItemTarefa from "./components/itemTarefa/page";
 import styles from "./styles/globals.module.scss";
 import popUp from "./styles/popUp.module.scss";
 import AdicionarTarefa from "./components/AdicionarTarefa/page";
-import { v4 as uuidv4 } from 'uuid';
+import { v4 as uuidv4 } from "uuid";
 import DeletarTarefa from "./components/DeletarTarefa/page"; //caminho se necessário
 
 function Home() {
@@ -15,7 +15,7 @@ function Home() {
     const tarefasSalvas = JSON.parse(localStorage.getItem("tarefas")) || [];
     setTarefas(tarefasSalvas);
   }, []);
-  
+
   useEffect(() => {
     localStorage.setItem("tarefas", JSON.stringify(tarefas));
   }, [tarefas]);

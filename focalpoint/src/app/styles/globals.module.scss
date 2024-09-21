@@ -5,11 +5,15 @@
 
   .title {
     text-align: center;
+    
   }
   .listTarefas {
     max-width: 450px;
     width: 75%;
     min-height: 446px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 32px 0px 0px 0px;
     border-radius: 16px;
     border: solid #EAECF0 2px;
