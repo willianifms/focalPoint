@@ -1,7 +1,11 @@
-import localFont from "next/font/local";
+import { Inter_Tight } from "next/font/google";
 import "./globals.css";
 
-
+// Carrega a fonte Inter Tight
+const interTight = Inter_Tight({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"], // Adicione os pesos desejados
+});
 
 export const metadata = {
   title: "FocalPoint",
@@ -12,12 +16,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-br">
-              <head>
-          <link rel="icon" href="./images/shape.png" /> 
-        </head>
-      <body
-        
-      >
+      <head>
+        <link rel="icon" href="./images/shape.png" />
+      </head>
+      <body className={interTight.className}>
         {children}
       </body>
     </html>
